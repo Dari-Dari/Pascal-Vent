@@ -1,0 +1,69 @@
+@import "../../assets/styles/variables.scss";
+
+.header {
+  //  Стили для начального состояния хэдера
+  width: 100%;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  transition: all 0.8s;
+  max-width: 100%;
+  padding: auto;
+  margin: 0 auto;
+  border-radius: 0 0 70px 70px;
+
+  .headerContainer {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.alignRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header.scrolled {
+  /* Стили для состояния хэдера после прокрутки */
+  background-color: #d9fadd;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 196px;
+  height: 61px;
+  background-image: url(../../assets/images/Logo.png);
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 646px;
+  font-family: $ProximaNova-Regular;
+  size: 15px;
+  color: $feldgrau;
+}
+
+.nav_item {
+  &:hover {
+    cursor: pointer;
+    transition: $uiTransition;
+    color: $green;
+  }
+}

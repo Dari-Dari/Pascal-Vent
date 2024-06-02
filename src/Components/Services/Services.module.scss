@@ -1,0 +1,157 @@
+@import "../../assets/styles/variables.scss";
+
+.services {
+  .servicesContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 8%;
+
+    .text {
+      max-width: 452px;
+      margin-left: 345.5px;
+
+      h3 {
+        color: $feldgrau;
+        font-family: $Ruberoid;
+        font-size: 2.8rem;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 1px;
+        line-height: 60px;
+
+        &::after {
+          content: "";
+          background: $green;
+          width: 245px;
+          height: 2px;
+          border-radius: 0.5px;
+          top: 75%;
+          right: 0;
+          position: absolute;
+        }
+      }
+
+      p {
+        color: #848484;
+        font-family: $ProximaNova-Regular;
+        font-size: 1rem;
+        padding: 3% 0;
+      }
+    }
+
+    .sidebar {
+      position: relative;
+      right: 0;
+      max-height: 676px;
+
+      .barMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: rotate(-90deg);
+        right: calc(100% - 210px);
+        top: 44%;
+        background-color: #d9fadd;
+        border-radius: 45px 45px 0 0;
+        padding: 1rem 1rem 0 1rem;
+
+        .barMenuItem {
+          width: 233px;
+          height: 65px;
+          background-color: #fff;
+          border: none;
+          font-family: $ProximaNova-Regular;
+          font-size: 14px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .firstButton {
+          border-radius: 35px 0 0 0;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:after {
+            content: url("../../assets/images/services_icon_condition.png");
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            transform: rotate(90deg);
+          }
+        }
+
+        .secondButton {
+          border-radius: 0 35px 0 0;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $green;
+          box-shadow: 2px -2px 12px 0px #226f215c inset;
+
+          &:after {
+            content: url("../../assets/images/services_icon_ventilation.png");
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      .descriptionContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d9fadd;
+        border-radius: 4rem 0 0 4rem;
+        width: 100%;
+        max-height: 655px;
+
+        .description {
+          display: flex;
+          flex-direction: column-reverse;
+          background-color: #d9fadd;
+          font-family: $ProximaNova-Regular;
+          color: $feldgrau;
+          border-radius: 4rem 0 0 4rem;
+          width: 26vw;
+          margin: 0 auto;
+
+          ul {
+            margin: 0;
+            padding-left: 15%;
+          }
+
+          .descriptionItem {
+            display: flex;
+            gap: 2%;
+            padding: 5% 0;
+
+            .imageBox {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 34px;
+              height: 34px;
+              background-color: #fff;
+              border-radius: 3px;
+            }
+
+            .descriptionText {
+              max-width: 307px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

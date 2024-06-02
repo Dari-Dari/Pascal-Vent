@@ -1,0 +1,117 @@
+@import "../../assets/styles/variables.scss";
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.mainScreen {
+  font-family: $Ruberoid;
+  color: $feldgrau;
+  font-size: 2.666em;
+  max-width: 516px;
+  margin-top: 8%;
+
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    color: $lightGreen;
+    letter-spacing: 1px;
+    line-height: 74px;
+    margin: 10px 0;
+  }
+
+  h2 {
+    text-align: end;
+    line-height: 74px;
+  }
+
+  .mainLine {
+    padding-left: 38%;
+    position: relative;
+    display: inline-block;
+
+    &:before {
+      content: "";
+      background: $green;
+      width: 148px;
+      height: 3px;
+      border-radius: 0.5px;
+      top: 50%;
+      left: 0;
+      position: absolute;
+    }
+  }
+
+  .subtitle {
+    color: $darkGreen;
+    font-family: $ProximaNova-Regular;
+    font-size: 22px;
+    padding-left: 12%;
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+
+    &:before {
+      content: "";
+      background: url("../../assets/images/main_circle.png") left no-repeat;
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    font-size: 16px;
+    font-family: $ProximaNova-Regular;
+    color: $greyGreen;
+    padding-left: 10px;
+    margin-top: 52px;
+
+    .contactsItem {
+      width: 200px;
+      height: 50px;
+      padding-left: 12%;
+      position: relative;
+      display: inline-block;
+
+      &:first-child {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 38px;
+          top: 0;
+          left: 0;
+          background: url("../../assets/images/main_icon_map.png") left
+            no-repeat;
+        }
+      }
+
+      &:last-child {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 38px;
+          top: 0;
+          left: 0;
+          background: url("../../assets/images/main_icon_phone.png") left
+            no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  padding: 65px 0;
+  letter-spacing: 30px;
+}

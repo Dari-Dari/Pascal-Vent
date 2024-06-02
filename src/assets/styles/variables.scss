@@ -1,0 +1,43 @@
+$Ruberoid: "Ruberoid";
+$ProximaNova-Bold: "ProximaNova-Bold";
+$ProximaNova-Regular: "ProximaNova-Regular";
+$ProximaNova-Semibold: "ProximaNova-Semibold";
+
+@font-face {
+  font-family: "Ruberoid";
+  src: url("../fonts/Ruberoid-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+$white: #fff;
+$lightGreen: #78c081;
+$green: #5ccd6a;
+$darkGreen: #7ca381;
+$emeraldGreen: #54e165;
+$feldgrau: #495e4c;
+$greyGreen: #7b897d;
+$uiTransition: 0.3s all;
