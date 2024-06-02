@@ -3,6 +3,7 @@ import "./App.scss";
 import Header from "./Components/Header/Header";
 import MainScreen from "./Components/MainScreen/MainScreen";
 import Services from "./Components/Services/Services";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   const mainRef = useRef(null);
@@ -30,6 +31,7 @@ const App = () => {
         <MainScreen ref={mainRef} />
       </div>
       <Services />
+      <Footer />
     </>
   );
 };

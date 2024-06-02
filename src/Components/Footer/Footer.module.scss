@@ -1,0 +1,16 @@
+@import "../../assets/styles/variables.scss";
+
+.footer {
+  background: url("../../assets/images/footer_bck_img.png") no-repeat;
+  background-size: cover;
+  margin-top: 5%;
+
+  .footerText {
+    font-family: $Ruberoid;
+    font-size: 32px;
+    color: $feldgrau;
+    width: 30%;
+    margin: 0 auto;
+    padding: 10% 0;
+  }
+}
